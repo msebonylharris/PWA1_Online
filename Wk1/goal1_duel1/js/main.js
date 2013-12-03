@@ -58,7 +58,7 @@ player*/
 round, depending on the outcome a string is returned to tell the outcome of each fight.*/
 	function winnerCheck(){};
 
-/*The following function contains the code that determines wether the fight has ended before
+/*The following code is a call to the fight function, this code that determines wether the fight has ended before
 the ten rounds have been reached.*/
 	fight();
 	
