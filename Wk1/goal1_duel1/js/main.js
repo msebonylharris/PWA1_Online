@@ -20,13 +20,13 @@ Assignment: Goal 1: Assignment: Duel1
 	semi-colon*/
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>PLAYER DAMAGE
-	var player1Damage = 25;
+	var player1Damage = 20;
 	/*In the code above I have created a private variable and named it player1Damage, I have given
-	this variable a number value of 25. I have closed the line with a semi-colon*/
+	this variable a number value of 20. I have closed the line with a semi-colon*/
 	
-	var player2Damage = 25;
+	var player2Damage = 20;
 	/*In the code above I have created a variable and named it player1Damage, I have given
-	this variable a number value of 25. I have closed the line with a semi-colon*/
+	this variable a number value of 20. I have closed the line with a semi-colon*/
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>PLAYER HEAlTH	
 	var player1Health = 100;
@@ -41,10 +41,29 @@ Assignment: Goal 1: Assignment: Duel1
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>ROUNDS PLAYED
 	var round=0; 
-	/*I have created a variable and called it round. I have set a number value of 1. The
+	/*I have created a variable and called it round. I have set a number value of 0. The
 	purpose of the variable "round" is give a starting point, so that for each time the fight button
 	is pushed, and we go through another loop, we can add on to this and correctly tell which level 
 	we are on. I have closed the line with a semi-colon*/
+	
+	function fight(){
+		console.log('in the fight function');
+		
+		alert(player1Name+":"+player1Health+" *START* "+player2Name+":"+player2Health);
+
+		
+		for(var i=0; i<10; i++){
+			console.log(i);
+			
+		};
+	};
+	
+	function winnerCheck(){
+		//code will go here
+	};
+	
+	console.log('program starts');
+	fight();
 
 })();
 
