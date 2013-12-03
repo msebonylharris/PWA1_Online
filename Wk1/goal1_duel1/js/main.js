@@ -48,7 +48,10 @@ Assignment: Goal 1: Assignment: Duel1
 	
 /*The following function contains the code that loops through the rounds to reduce the health of each
 player*/
-	function fight(){};
+	function fight(){
+	for (var i=0; i < 10; i++){
+		console.log(i);
+	};
 	console.log('in the fight function');
 
 
@@ -61,5 +64,5 @@ the ten rounds have been reached.*/
 	console.log('program start');
 	fight();
 	
-} ) ( );
+};
 
