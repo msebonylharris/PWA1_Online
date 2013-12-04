@@ -1,13 +1,13 @@
 /*
 Name: Ebony L Harris
 Date: 12/02/2013
-Assignment: Goal 1: Assignment: Duel1
+Assignment: Goal 2: Assignment: Duel2
 */
 
 (function(){
 	
 	console.log("FIGHT!!!");
-	
+		
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>PLAYER NAMES		
 	var player1Name = "Spiderman";
 	/*In the code above I have created a variable and named player1Name, I have given 
@@ -18,7 +18,7 @@ Assignment: Goal 1: Assignment: Duel1
 	/*In the code above I have created a variable and named player2Name, I have given 
 	my variable a value of "Batman", which is a string. I have closed the line with a 
 	semi-colon*/
-
+	
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>PLAYER DAMAGE
 	var player1Damage = 20;
 	/*In the code above I have created a private variable and named it player1Damage, I have given
@@ -38,6 +38,10 @@ Assignment: Goal 1: Assignment: Duel1
 	/* I have created a variable and called it player2Health, I gave it a number value of
 	100. The purpose of the player2Health is so that we can have a starting point for our damage to 
 	deduct from I have closed the line with a semi-colon*/
+	
+	var player1 = ["Spiderman", 20, 100];
+	
+	var player2 = ["Batman", 20, 100];
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>ROUNDS PLAYED
 	var round=0; 
@@ -54,7 +58,7 @@ Assignment: Goal 1: Assignment: Duel1
 		alert will display in a dialogue box after the first alert. I am displaying the player
 		information for the fighters. I know this is not required, but I just wanted to add it.*/
 		
-		alert(player1Name+":"+player1Health+" *START* "+player2Name+":"+player2Health);
+		alert(player1[0]+":"+player1[2]+" *START* "+player2[0]+":"+player2[2]);
 		/*In the code above I have set up an alert. This should be alert number three. This 
 		alert will display in a dialogue box after the second alert. I am displaying the player
 		information for the fighters, and letting the user know that this starts the round. */
