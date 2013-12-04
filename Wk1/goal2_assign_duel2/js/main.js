@@ -9,36 +9,38 @@ Assignment: Goal 2: Assignment: Duel2
 	console.log("FIGHT!!!");
 		
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>PLAYER NAMES		
-	var player1Name = "Spiderman";
+	//>>>>>>>>>>CHANGED TO AN ARRAY>>>>>>>>>>var player1Name = "Spiderman";
 	/*In the code above I have created a variable and named player1Name, I have given 
 	my variable a value of "Spiderman", which is a string. I have closed the line with a 
 	semi-colon*/
 	
-	var player2Name = "Batman";
+	//>>>>>>>>>>CHANGED TO AN ARRAY>>>>>>>>>>var player2Name = "Batman";
 	/*In the code above I have created a variable and named player2Name, I have given 
 	my variable a value of "Batman", which is a string. I have closed the line with a 
 	semi-colon*/
 	
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>PLAYER DAMAGE
-	var player1Damage = 20;
+	//>>>>>>>>>>CHANGED TO AN ARRAY>>>>>>>>>>var player1Damage = 20;
 	/*In the code above I have created a private variable and named it player1Damage, I have given
 	this variable a number value of 20. I have closed the line with a semi-colon*/
 	
-	var player2Damage = 20;
+	//>>>>>>>>>>CHANGED TO AN ARRAY>>>>>>>>>>var player2Damage = 20;
 	/*In the code above I have created a variable and named it player1Damage, I have given
 	this variable a number value of 20. I have closed the line with a semi-colon*/
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>PLAYER HEAlTH	
-	var player1Health = 100;
+	//>>>>>>>>>>CHANGED TO AN ARRAY>>>>>>>>>>var player1Health = 100;
 	/* I have created a variable and called it player1Health, I gave it a number value of
 	100. The purpose of the player1Health is so that we can have a starting point for our damage to 
 	deduct from I have closed the line with a semi-colon*/
 	
-	var player2Health = 100;
+	//>>>>>>>>>>CHANGED TO AN ARRAY>>>>>>>>>>var player2Health = 100;
 	/* I have created a variable and called it player2Health, I gave it a number value of
 	100. The purpose of the player2Health is so that we can have a starting point for our damage to 
 	deduct from I have closed the line with a semi-colon*/
 	
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>PLAYER ARRAYS - CHANGES FROM GOAL 2 DUEL 2
+
 	var player1 = ["Spiderman", 20, 100];
 	
 	var player2 = ["Batman", 20, 100];
@@ -57,7 +59,11 @@ Assignment: Goal 2: Assignment: Duel2
 		/*In the code above I have set up an alert. This should be alert number two. This 
 		alert will display in a dialogue box after the first alert. I am displaying the player
 		information for the fighters. I know this is not required, but I just wanted to add it.*/
-		
+	
+//>>>>>>THE ALERT BELOW CONTAINS CHANGES FROM GOAL 2 DUEL 2
+		/*In the code below I changed the variable to the array that was set up for each 
+		player. I used the [] method to drill down extract information from the array using
+		the index numbers. */ 
 		alert(player1[0]+":"+player1[2]+" *START* "+player2[0]+":"+player2[2]);
 		/*In the code above I have set up an alert. This should be alert number three. This 
 		alert will display in a dialogue box after the second alert. I am displaying the player
@@ -77,19 +83,38 @@ Assignment: Goal 2: Assignment: Duel2
 			/*In the code above I have performed a console log for the variable(i). This will
 			help me keep track of which round we are on.*/
 			
-			var minDamage1 = (player1Damage * .5);
+//>>>>>>THE LINE OF CODE BELOW CONTAINS CHANGES FROM GOAL 2 DUEL 2
+			/*In the code below I changed the variable to the array that was set up for each 
+			player. I used the [] method to drill down extract information from the array using
+			the index numbers. */ 
+			var minDamage1 = (player1[1] * .5);
 			/*In the code above I have declared the variable minDamage1 and have given it a value
 			that is equal to half of the players Damage. Since the player1Damage is set at 20 the
 			minimum damage that can be received is 10.*/
-			var minDamage2 = (player2Damage * .5);
+
+//>>>>>>THE LINE OF CODE BELOW CONTAINS CHANGES FROM GOAL 2 DUEL 2
+			/*In the code below I changed the variable to the array that was set up for each 
+			player. I used the [] method to drill down extract information from the array using
+			the index numbers. */ 
+			var minDamage2 = (player2[1] * .5);
 			/*In the code above I have declared the variable minDamage2 and have given it a value
 			that is equal to half of the players Damage. Since the player1Damage is set at 20 the
 			minimum damage that can be received is 10.*/
-			var f1 = Math.floor(Math.random()*(player1Damage-minDamage1) + minDamage1);
+
+//>>>>>>THE LINE OF CODE BELOW CONTAINS CHANGES FROM GOAL 2 DUEL 2
+			/*In the code below I changed the variable to the array that was set up for each 
+			player. I used the [] method to drill down extract information from the array using
+			the index numbers. */ 
+			var f1 = Math.floor(Math.random()*(player1[1]-minDamage1) + minDamage1);
 			/*In the code above I have declared the variable f1, this variable is the formula
 			that will calculate the damage that is received at end of a round. I use Math.floor
 			and Math.random to get a whole number that can be deducted from the player health.*/
-			var f2 = Math.floor(Math.random()*(player2Damage-minDamage2) + minDamage2);
+
+//>>>>>>THE LINE OF CODE BELOW CONTAINS CHANGES FROM GOAL 2 DUEL 2
+			/*In the code below I changed the variable to the array that was set up for each 
+			player. I used the [] method to drill down extract information from the array using
+			the index numbers. */ 
+			var f2 = Math.floor(Math.random()*(player2[1]-minDamage2) + minDamage2);
 			/*In the code above I have declared the variable f2, this variable is the formula
 			that will calculate the damage that is received at end of a round. I use Math.floor
 			and Math.random to get a whole number that can be deducted from the player health.*/
@@ -113,7 +138,11 @@ Assignment: Goal 2: Assignment: Duel2
 			/*In the code above, I am using console.log to track the player2Name and Player2Health
 			This helps me to see if the information is updating correctly*/
 			
-			console.log(player1Name+":"+player1Health+" *ROUND* "+round+" "+player2Name+":"+player2Health);
+//>>>>>>THE LINE OF CODE BELOW CONTAINS CHANGES FROM GOAL 2 DUEL 2
+			/*In the code below I changed the variable to the array that was set up for each 
+			player. I used the [] method to drill down extract information from the array using
+			the index numbers. */ 
+			console.log(player1[0]+":"+player1[3]+" *ROUND* "+round+" "+player2[0]+":"+player2[3]);
 			/*In the code above, I am preforming a console.log to update the player information
 			along with the round information*/
 			
