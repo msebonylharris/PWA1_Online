@@ -130,15 +130,19 @@ Assignment: Goal 2: Assignment: Duel2
 			/*In the code below I changed the variable to the array that was set up for each 
 			player. I used the [] method to drill down extract information from the array using
 			the index numbers. */ 
-			player1[3]-=f1;
+			player1[2]-=f1;
 			/*In the code above I am updating player1Health.*/
+			console.log("The amount deducted from "+player1[0]+ " is "+f1);
+			//In the code above I am performing a console.log to track the amount deducted each time. 
 
 //>>>>>>THE LINE OF CODE BELOW CONTAINS CHANGES FROM GOAL 2 DUEL 2
 			/*In the code below I changed the variable to the array that was set up for each 
 			player. I used the [] method to drill down extract information from the array using
 			the index numbers. */ 
-			player2[3]-=f2;
+			player2[2]-=f2;
 			/*In the code above I am updating player2Health.*/
+			console.log("The amount deducted from "+player2[0]+ " is "+f2);
+			//In the code above I am performing a console.log to track the amount deducted each time. 
 			
 			//console.log(player1Name+":"+player1Health);			
 			/*In the code above, I am using console.log to track the player1Name and Player1Health
@@ -151,7 +155,7 @@ Assignment: Goal 2: Assignment: Duel2
 			/*In the code below I changed the variable to the array that was set up for each 
 			player. I used the [] method to drill down extract information from the array using
 			the index numbers. */ 
-			console.log(player1[0]+":"+player1[3]+" *ROUND "+round+" * "+player2[0]+":"+player2[3]);
+			console.log(player1[0]+":"+player1[2]+" *ROUND "+round+" * "+player2[0]+":"+player2[2]);
 			/*In the code above, I am preforming a console.log to update the player information
 			along with the round information*/
 			
@@ -173,7 +177,7 @@ Assignment: Goal 2: Assignment: Duel2
 				/*In the code below I changed the variable to the array that was set up for each 
 				player. I used the [] method to drill down extract information from the array using
 				the index numbers. */ 
-				alert(player1[0]+":"+player1[3]+" *ROUND "+round+" Over* "+player2[0]+":"+player2[3]);
+				alert(player1[0]+":"+player1[2]+" *ROUND "+round+" Over* "+player2[0]+":"+player2[2]);
 				/*In the code above, I have set a player alert. This is actually my fourth alert
 				and this same alert will keep refreshing until a winner is found.*/
 			}else{
@@ -202,7 +206,7 @@ Assignment: Goal 2: Assignment: Duel2
 		/*In the code below I changed the variable to the array that was set up for each 
 		player. I used the [] method to drill down extract information from the array using
 		the index numbers. */ 
-		if(player1[3]<1 && player2[3]<1){
+		if(player1[2]<1 && player2[2]<1){
 		/*In the code above, I am setting up conditionals for my players. If player 1 and
 		player 2 has a health less than 1 the following code is to be executed. */
 
@@ -214,14 +218,14 @@ Assignment: Goal 2: Assignment: Duel2
 		/*In the code below I changed the variable to the array that was set up for each 
 		player. I used the [] method to drill down extract information from the array using
 		the index numbers. */ 
-		}else if(player1[3] <1){
+		}else if(player1[2] <1){
 		/*In the code above, I am setting up conditionals for my players. If player 1
 		health is less than 1 the following code is to be executed. */
 //>>>>>>THE LINE OF CODE BELOW CONTAINS CHANGES FROM GOAL 2 DUEL 2
 		/*In the code below I changed the variable to the array that was set up for each 
 		player. I used the [] method to drill down extract information from the array using
 		the index numbers. */ 
-			result = player2[0] + "Wins!!!";
+			result = player2[0] + " Wins!!!";
 		/*In the code above, this is based on the conditions previously set. If both 
 		player 1's life goes below 1, the the message "Player 2 Wins!!!" will appear.*/
 
@@ -229,7 +233,7 @@ Assignment: Goal 2: Assignment: Duel2
 		/*In the code below I changed the variable to the array that was set up for each 
 		player. I used the [] method to drill down extract information from the array using
 		the index numbers. */ 
-		}else if(player2[3] <1){
+		}else if(player2[2] <1){
 		/*In the code above, I am setting up conditionals for my players. If player 2
 		health is less than 1 the following code is to be executed. */
 
@@ -237,7 +241,7 @@ Assignment: Goal 2: Assignment: Duel2
 		/*In the code below I changed the variable to the array that was set up for each 
 		player. I used the [] method to drill down extract information from the array using
 		the index numbers. */ 
-			result = player1[0] + "Wins!!!";
+			result = player1[0] + " Wins!!!";
 		/*In the code above, this is based on the conditions previously set. If both 
 		player 1's life goes below 2, the the message "Player 1 Wins!!!" will appear.*/
 		}
