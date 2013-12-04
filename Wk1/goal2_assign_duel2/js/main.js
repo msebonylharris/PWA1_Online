@@ -126,9 +126,18 @@ Assignment: Goal 2: Assignment: Duel2
 			/*In the code above, I am using console.log to track the variable f2. This should
 			help me to see if the code above is working correctly.*/
 			
-			player1Health-=f1;
+//>>>>>>THE LINE OF CODE BELOW CONTAINS CHANGES FROM GOAL 2 DUEL 2
+			/*In the code below I changed the variable to the array that was set up for each 
+			player. I used the [] method to drill down extract information from the array using
+			the index numbers. */ 
+			player1[3]-=f1;
 			/*In the code above I am updating player1Health.*/
-			player2Health-=f2;
+
+//>>>>>>THE LINE OF CODE BELOW CONTAINS CHANGES FROM GOAL 2 DUEL 2
+			/*In the code below I changed the variable to the array that was set up for each 
+			player. I used the [] method to drill down extract information from the array using
+			the index numbers. */ 
+			player2[3]-=f2;
 			/*In the code above I am updating player2Health.*/
 			
 			//console.log(player1Name+":"+player1Health);			
