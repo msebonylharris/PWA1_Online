@@ -7,7 +7,7 @@ Assignment: Goal 1: Assignment: Duel1
 (function(){
 	
 	console.log("FIGHT!!!");
-	
+		
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>PLAYER NAMES		
 	var player1Name = "Spiderman";
 	/*In the code above I have created a variable and named player1Name, I have given 
@@ -18,7 +18,7 @@ Assignment: Goal 1: Assignment: Duel1
 	/*In the code above I have created a variable and named player2Name, I have given 
 	my variable a value of "Batman", which is a string. I have closed the line with a 
 	semi-colon*/
-
+	
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>PLAYER DAMAGE
 	var player1Damage = 20;
 	/*In the code above I have created a private variable and named it player1Damage, I have given
@@ -49,7 +49,7 @@ Assignment: Goal 1: Assignment: Duel1
 	function fight(){
 	/*In the code above I am declaring my fight function.*/
 
-		alert('To the left we have '+player1Name+' and to the right we have '+player2Name);
+		//alert('To the left we have '+player1Name+' and to the right we have '+player2Name);
 		/*In the code above I have set up an alert. This should be alert number two. This 
 		alert will display in a dialogue box after the first alert. I am displaying the player
 		information for the fighters. I know this is not required, but I just wanted to add it.*/
@@ -109,7 +109,7 @@ Assignment: Goal 1: Assignment: Duel1
 			/*In the code above, I am using console.log to track the player2Name and Player2Health
 			This helps me to see if the information is updating correctly*/
 			
-			//console.log(player1Name+":"+player1Health+" *ROUND* "+round+" "+player2Name+":"+player2Health);
+			console.log(player1Name+":"+player1Health+" *ROUND "+round+" * "+player2Name+":"+player2Health);
 			/*In the code above, I am preforming a console.log to update the player information
 			along with the round information*/
 			
@@ -125,8 +125,9 @@ Assignment: Goal 1: Assignment: Duel1
 			is equal to "no winner" that the following things should happen. */
 				round++;
 			/*In the code above, I am using the (++) to add 1 to the number associated with
-			round. The starting number is 0. /
-				alert(player1Name+":"+player1Health+" *ROUND"+round+" Over*"+player2Name+":"+player2Health);
+			round. The starting number is 0. */
+				
+				alert(player1Name+":"+player1Health+" *ROUND "+round+" Over* "+player2Name+":"+player2Health);
 				/*In the code above, I have set a player alert. This is actually my fourth alert
 				and this same alert will keep refreshing until a winner is found.*/
 			}else{
@@ -160,13 +161,13 @@ Assignment: Goal 1: Assignment: Duel1
 		}else if(player1Health<1){
 		/*In the code above, I am setting up conditionals for my players. If player 1
 		health is less than 1 the following code is to be executed. */
-			result = player2Name + "Wins!!!";
+			result = player2Name + " Wins!!!";
 		/*In the code above, this is based on the conditions previously set. If both 
 		player 1's life goes below 1, the the message "Player 2 Wins!!!" will appear.*/
 		}else if(player2Health<1){
 		/*In the code above, I am setting up conditionals for my players. If player 2
 		health is less than 1 the following code is to be executed. */
-			result = player1Name + "Wins!!!";
+			result = player1Name + " Wins!!!";
 		/*In the code above, this is based on the conditions previously set. If both 
 		player 1's life goes below 2, the the message "Player 1 Wins!!!" will appear.*/
 		}
@@ -177,7 +178,7 @@ Assignment: Goal 1: Assignment: Duel1
 	
 	};
 	
-	alert('LET\'\S GET READY TO RUMBLE!');
+	//alert('LET\'\S GET READY TO RUMBLE!');
 		/*In the code above I have set up an alert. This is the first alert that players will see. 
 		This alert will be the first alert to display in the dialogue box. I have displayed The words
 		"LET'S GET READY TO RUMBLE!" I used the escape(\\) characters so that I can use quotes (')
@@ -186,4 +187,3 @@ Assignment: Goal 1: Assignment: Duel1
 		/*In the code above am calling the function fight. I am initiating it. */
 
 })();
-
